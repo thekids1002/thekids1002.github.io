@@ -1,0 +1,42 @@
+/* style.css */
+body {
+    background: linear-gradient(135deg, #1e1e1e, #4a00e0);
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.animated-title {
+    font-size: 3em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.skills .skill {
+    display: inline-block;
+    background: #ff007a;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.skills .skill:hover {
+    transform: scale(1.1);
+    background: #00ffcc;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
